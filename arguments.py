@@ -30,7 +30,7 @@ def parse_args():
     parser.add_argument('--str_noise_rate', type=float, default=2.0, 
                         help='change the structure noise rate. Set it as 2.0 to keep the original noise rate.')
     parser.add_argument('--lbl_noise_num', type=int, default=0, 
-                        help='change the lbl noise rate. Set it as 0.0 to keep the original noise rate.')
+                        help='change the lbl noise num. Set it as 0 to keep the original noise rate.')
     parser.add_argument('--patience', type=int, default=100, help='Patience')
     parser.add_argument('--seed', type=int, default=2144199737, help='Random seed for split data.')
     parser.add_argument('--ini_seed', type=int, default=2144199730, help='Random seed to initialize parameters.')
