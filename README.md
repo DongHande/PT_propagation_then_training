@@ -66,4 +66,4 @@ This code refers to:
 
 https://github.com/klicperajo/ppnp
 
-https://github.com/tkipf/gcn/blob/master/gcn/utils.py
+https://github.com/tkipf/gcn
