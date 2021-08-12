@@ -115,7 +115,7 @@ def label_propagation(adj, labels, idx, K, alpha):
         y0[i][labels[i]] = 1.0
     
     y = y0
-    for i in range(K): 
+    for _ in range(K): 
         y = torch.matmul(adj, y)
         for i in idx:
             y[i] = F.one_hot(torch.tensor(labels[i].cpu().numpy().astype(np.int64)), labels.max().item() + 1)

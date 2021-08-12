@@ -115,6 +115,6 @@ class PT(nn.Module):
     def inference(self, h, adj): 
         y0 = torch.softmax(h, dim=-1) 
         y = y0
-        for i in range(self.K):
+        for _ in range(self.K):
             y = (1 - self.alpha) * torch.matmul(adj, y) + self.alpha * y0
         return y
